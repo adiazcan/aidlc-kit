@@ -1,0 +1,205 @@
+:root {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: #1d1a14;
+  background:
+    radial-gradient(circle at top left, rgba(232, 175, 79, 0.35), transparent 30%),
+    linear-gradient(180deg, #f9f2df 0%, #efe0b8 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font: inherit;
+}
+
+.app-shell {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.hero,
+.status-panel,
+.controls-panel,
+.history-panel,
+.bank-card,
+.solution-panel,
+.solution-cta-panel {
+  background: rgba(255, 251, 239, 0.92);
+  border: 1px solid rgba(75, 58, 21, 0.12);
+  border-radius: 1.25rem;
+  box-shadow: 0 16px 40px rgba(79, 55, 19, 0.1);
+}
+
+.hero,
+.status-panel,
+.controls-panel,
+.history-panel,
+.solution-panel,
+.solution-cta-panel {
+  padding: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a5d1f;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+.summary {
+  max-width: 60ch;
+  margin-bottom: 0;
+  line-height: 1.55;
+}
+
+.banks-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.bank-card {
+  padding: 1.25rem;
+}
+
+.bank-card ul,
+.history-panel ol {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.bank-card li,
+.history-panel li {
+  text-transform: capitalize;
+  line-height: 1.6;
+}
+
+.controls-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls-copy {
+  max-width: 58ch;
+  margin-bottom: 0;
+  line-height: 1.55;
+}
+
+.solution-copy {
+  max-width: 60ch;
+  line-height: 1.55;
+}
+
+.solution-cta-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.move-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.move-button {
+  display: grid;
+  gap: 0.35rem;
+  align-content: start;
+  min-height: 6.5rem;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 1.1rem;
+  background: #2c5a57;
+  color: #fffaf0;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  text-align: left;
+}
+
+.move-button small {
+  color: rgba(255, 250, 240, 0.85);
+}
+
+.move-button-legal {
+  background: linear-gradient(180deg, #2c5a57 0%, #1f4542 100%);
+}
+
+.move-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 16px rgba(20, 61, 58, 0.2);
+}
+
+.move-button:focus-visible {
+  outline: 3px solid #e8af4f;
+  outline-offset: 3px;
+}
+
+.secondary-button {
+  padding: 0.85rem 1.1rem;
+  border: 1px solid rgba(44, 90, 87, 0.2);
+  border-radius: 999px;
+  background: #fffaf0;
+  color: #1f4542;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.secondary-button:hover {
+  box-shadow: 0 10px 16px rgba(20, 61, 58, 0.12);
+}
+
+.secondary-button:focus-visible {
+  outline: 3px solid #e8af4f;
+  outline-offset: 3px;
+}
+
+.solution-panel ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.solution-panel li {
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 1.25rem 1rem 2rem;
+  }
+
+  .controls-heading {
+    display: block;
+  }
+
+  .solution-cta-panel {
+    display: grid;
+  }
+}

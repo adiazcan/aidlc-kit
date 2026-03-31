@@ -1,0 +1,7 @@
+{
+    "chat.mcp.serverSampling": {
+        "aidlc-kit/.vscode/mcp.json: Azure MCP Server": {
+            "allowedDuringChat": true
+        }
+    }
+}
